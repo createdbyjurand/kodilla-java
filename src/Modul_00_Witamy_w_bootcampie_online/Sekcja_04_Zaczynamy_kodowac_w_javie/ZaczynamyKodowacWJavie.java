@@ -1,10 +1,9 @@
-package Modul_00.Sekcja_04;
+package Modul_00_Witamy_w_bootcampie_online.Sekcja_04_Zaczynamy_kodowac_w_javie;
 
 import static Shared.Display.*;
 
 import java.util.*;
 import java.lang.*;
-import java.io.*;
 
 public class ZaczynamyKodowacWJavie {
 
