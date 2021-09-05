@@ -2,6 +2,46 @@ package Shared;
 
 public class Display {
 
+  public enum AnsiColor {
+    RESET,
+    BLACK,
+    RED,
+    GREEN,
+    YELLOW,
+    BLUE,
+    PURPLE,
+    CYAN,
+    WHITE,
+
+    WHITE_BACKGROUND,
+    BLACK_BACKGROUND,
+    RED_BACKGROUND,
+    GREEN_BACKGROUND,
+    YELLOW_BACKGROUND,
+    BLUE_BACKGROUND,
+    PURPLE_BACKGROUND,
+    CYAN_BACKGROUND;
+
+    private static final String ANSI_RESET = "\u001B[0m";
+    private static final String ANSI_BLACK = "\u001B[30m";
+    private static final String ANSI_RED = "\u001B[31m";
+    private static final String ANSI_GREEN = "\u001B[32m";
+    private static final String ANSI_YELLOW = "\u001B[33m";
+    private static final String ANSI_BLUE = "\u001B[34m";
+    private static final String ANSI_PURPLE = "\u001B[35m";
+    private static final String ANSI_CYAN = "\u001B[36m";
+    private static final String ANSI_WHITE = "\u001B[37m";
+
+    private static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
+    private static final String ANSI_BLACK_BACKGROUND = "\u001B[40m";
+    private static final String ANSI_RED_BACKGROUND = "\u001B[41m";
+    private static final String ANSI_GREEN_BACKGROUND = "\u001B[42m";
+    private static final String ANSI_YELLOW_BACKGROUND = "\u001B[43m";
+    private static final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
+    private static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
+    private static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
+  }
+
   public static final String ANSI_RESET = "\u001B[0m";
   public static final String ANSI_BLACK = "\u001B[30m";
   public static final String ANSI_RED = "\u001B[31m";
@@ -64,5 +104,13 @@ public class Display {
     output = fill(output, '-', rightSide);
 
     System.out.println(ANSI_WHITE + output + ANSI_RESET);
+  }
+
+  public static void display(String textToDisplay) {
+    System.out.println(ANSI_YELLOW + textToDisplay + ANSI_RESET);
+  }
+
+  public static void display(String textToDisplay, AnsiColor color) {
+    System.out.println(color + textToDisplay + ANSI_RESET);
   }
 }
