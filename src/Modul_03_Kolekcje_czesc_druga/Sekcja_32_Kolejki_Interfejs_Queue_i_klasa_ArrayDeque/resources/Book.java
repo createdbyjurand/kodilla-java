@@ -1,10 +1,5 @@
 package Modul_03_Kolekcje_czesc_druga.Sekcja_32_Kolejki_Interfejs_Queue_i_klasa_ArrayDeque.resources;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-import java.time.*;
-
 public class Book {
 
   String title;

@@ -1,17 +1,12 @@
 package Modul_03_Kolekcje_czesc_druga.Sekcja_32_Kolejki_Interfejs_Queue_i_klasa_ArrayDeque;
 
-import Modul_03_Kolekcje_czesc_druga.Sekcja_32_Kolejki_Interfejs_Queue_i_klasa_ArrayDeque.resources.Book;
-import Modul_03_Kolekcje_czesc_druga.Sekcja_32_Kolejki_Interfejs_Queue_i_klasa_ArrayDeque.resources.Order;
-import java.io.*;
-import java.lang.*;
-import java.net.*;
-import java.time.LocalDate;
-import java.util.*;
-import Shared.Display.AnsiColor;
-
 import static Shared.Display.display;
 import static Shared.Display.displaySubtitle;
 import static Shared.Display.displayTitle;
+
+import Modul_03_Kolekcje_czesc_druga.Sekcja_32_Kolejki_Interfejs_Queue_i_klasa_ArrayDeque.resources.Book;
+import Modul_03_Kolekcje_czesc_druga.Sekcja_32_Kolejki_Interfejs_Queue_i_klasa_ArrayDeque.resources.Order;
+import java.util.ArrayDeque;
 
 public class KolejkiInterfejsQueueIKlasaArrayDeque {
 

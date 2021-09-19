@@ -1,10 +1,5 @@
 package Modul_03_Kolekcje_czesc_druga.Sekcja_31_Zbiory_Interfejs_Set_i_klasa_HashSet.resources;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-import java.time.*;
-
 public class Book {
 
   private final String title;
@@ -21,7 +16,7 @@ public class Book {
     this.year = year;
   }
 
-  public int hashCode(){
+  public int hashCode() {
     return year * title.length() * author.length();
   }
 
@@ -30,7 +25,7 @@ public class Book {
     return year == book.year && title.equals(book.title) && author.equals(book.author);
   }
 
-  public String toString(){
+  public String toString() {
     return title + " by " + author + ", from " + year;
   }
 

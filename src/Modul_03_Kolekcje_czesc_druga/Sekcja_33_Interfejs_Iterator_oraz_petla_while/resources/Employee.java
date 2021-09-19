@@ -1,4 +1,4 @@
-package Modul_03_Kolekcje_czesc_druga.Sekcja_31_Zbiory_Interfejs_Set_i_klasa_HashSet.resources;
+package Modul_03_Kolekcje_czesc_druga.Sekcja_33_Interfejs_Iterator_oraz_petla_while.resources;
 
 import java.time.LocalDate;
 
@@ -10,13 +10,8 @@ public class Employee {
   LocalDate birthDate;
 
   // Constructor
-  public Employee(
-    String firstName,
-    String lastName,
-    int yearOfBirth,
-    int monthOfBirth,
-    int dayOfBirth
-  ) {
+  public Employee(String firstName, String lastName, int yearOfBirth,
+    int monthOfBirth, int dayOfBirth) {
     this.firstName = firstName;
     this.lastName = lastName;
     // Class LocalDate provided by java.time library is used

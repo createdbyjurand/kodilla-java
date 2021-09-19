@@ -1,17 +1,13 @@
 package Modul_03_Kolekcje_czesc_druga.Sekcja_31_Zbiory_Interfejs_Set_i_klasa_HashSet;
 
-import Modul_03_Kolekcje_czesc_druga.Sekcja_31_Zbiory_Interfejs_Set_i_klasa_HashSet.resources.Book;
-import Modul_03_Kolekcje_czesc_druga.Sekcja_31_Zbiory_Interfejs_Set_i_klasa_HashSet.resources.Employee;
-import java.io.*;
-import java.lang.*;
-import java.net.*;
-import java.time.LocalDate;
-import java.util.*;
-import Shared.Display.AnsiColor;
-
 import static Shared.Display.display;
 import static Shared.Display.displaySubtitle;
 import static Shared.Display.displayTitle;
+
+import Modul_03_Kolekcje_czesc_druga.Sekcja_31_Zbiory_Interfejs_Set_i_klasa_HashSet.resources.Book;
+import Modul_03_Kolekcje_czesc_druga.Sekcja_31_Zbiory_Interfejs_Set_i_klasa_HashSet.resources.Employee;
+import java.time.LocalDate;
+import java.util.HashSet;
 
 public class ZbioryInterfejsSetIKlasaHashSet {
 
