@@ -1,10 +1,7 @@
 package Shared;
 
-import java.io.*;
-import java.lang.*;
-import java.net.*;
-import java.time.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Display {
 
@@ -40,6 +37,19 @@ public class Display {
       colors += color;
     }
     return colors;
+  }
+
+  private static String[] wrap(String stringToWrap, int maxLength) {
+    List<String> arrayListOfStrings = new ArrayList<String>();
+
+    while (stringToWrap.length() > maxLength) {
+      int cutPoint = stringToWrap.lastIndexOf(" ", maxLength);
+      arrayListOfStrings.add(stringToWrap.substring(0, cutPoint));
+      stringToWrap = "    " + stringToWrap.substring(cutPoint + 1);
+    }
+
+    arrayListOfStrings.add(stringToWrap);
+    return arrayListOfStrings.toArray(new String[0]);
   }
 
   /////////////////////////// display ///////////////////////////
@@ -79,10 +89,14 @@ public class Display {
   /////////////////////////// displayComment ///////////////////////////
 
   public static void displayComment(String stringToDisplay, AnsiColor... ansiColors) {
-    System.out.println("" + AnsiColor.GREEN + mergeAnsiColors(ansiColors) + "// " + stringToDisplay + AnsiColor.RESET);
+    for (String line : wrap(stringToDisplay, CONSOLE_WIDTH)) {
+      System.out.println("" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET);
+    }
   }
 
   public static void displayComment(Number numberToDisplay, AnsiColor... ansiColors) {
-    System.out.println("" + AnsiColor.GREEN + mergeAnsiColors(ansiColors) + "// " + numberToDisplay + AnsiColor.RESET);
+    for (String line : wrap(numberToDisplay.toString(), CONSOLE_WIDTH)) {
+      System.out.println("" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET);
+    }
   }
 }

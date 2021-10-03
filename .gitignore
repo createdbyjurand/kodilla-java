@@ -1,2 +1,5 @@
 /.idea
+/.vscode
+/git_ignore
+/node_modules
 /out

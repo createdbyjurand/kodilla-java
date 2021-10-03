@@ -19,8 +19,26 @@ class Kodilla
 }
 ```
 
-### System
+### Lists
 
-#### Kill all git.exe system processes created by Sourcetree
+| list       | description |
+| ---------- | ----------- |
+| LinkedList |             |
+
+### Interfaces and classes
+
+| interface | class      | description |
+| --------- | ---------- | ----------- |
+| Set       | HashSet    |
+| Iterator  |
+| Queue     | ArrayDeque |
+
+## node/npm
+
+`npm i --save-dev --save-exact prettier`
+
+## System
+
+### Kill all git.exe system processes created by Sourcetree
 
 `Taskkill /IM git.exe /F`
