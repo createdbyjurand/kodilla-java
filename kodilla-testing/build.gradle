@@ -15,7 +15,10 @@ repositories {
 dependencies {
   implementation project(":shared")
 
-  /* JUnit 5 */
+  /*
+   JUnit 5
+   https://junit.org/junit5/docs/current/user-guide/#running-tests-build-gradle
+   */
   testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 
   /* JUnit 4 */
