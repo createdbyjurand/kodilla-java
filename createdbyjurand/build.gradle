@@ -1,0 +1,13 @@
+plugins {
+  id "idea"
+  id "java"
+}
+
+group "com.cretedbyjurand"
+version "0.0.1-SNAPSHOT"
+sourceCompatibility = "1.8"
+
+dependencies {
+  implementation project(":kodilla-testing")
+  implementation project(":shared")
+}

@@ -1,0 +1,15 @@
+{
+  arrowParens: 'avoid',
+  endOfLine: 'crlf',
+  printWidth: 110,
+  singleQuote: true,
+  trailingComma: 'all',
+  overrides: [
+    {
+      files: '*.java',
+      options: {
+        tabWidth: 4,
+      },
+    },
+  ],
+}
