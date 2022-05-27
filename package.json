@@ -1,0 +1,11 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "author": "Jurand Niemczycki <createdbyjurand@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@prettier/plugin-xml": "^2.2.0",
+    "prettier": "^2.6.2",
+    "prettier-plugin-java": "^1.6.1"
+  }
+}

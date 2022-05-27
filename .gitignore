@@ -1,0 +1,12 @@
+/.gradle
+/.idea
+/.vscode
+build
+git_ignore
+node_modules
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/

@@ -1,0 +1,51 @@
+plugins {
+  id "idea"
+  id "java"
+
+  /* Spring */
+  id 'org.springframework.boot' version '2.6.1'
+  id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(8)
+  }
+}
+
+group "com.kodilla"
+version "0.0.1-SNAPSHOT"
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation project(":modul-00-witamy-w-bootcampie-online")
+  implementation project(":modul-01-programowanie-obiektowe")
+  implementation project(":modul-02-wstep-do-kolekcji")
+  implementation project(":modul-03-kolekcje-czesc-druga")
+  implementation project(":modul-04-narzedzia-java-developera")
+  implementation project(":modul-05-poznanie-i-przygotowanie-struktury-projektu")
+  implementation project(":modul-06-wprowadzenie-do-testowania-oprogramowania")
+  implementation project(":modul-07-stream-czyli-funkcyjna-iteracja-po-kolekcjach")
+  implementation project(":shared")
+
+  /* Spring */
+  implementation 'org.springframework.boot:spring-boot-starter'
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+  /* JUnit 5 */
+  testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
+
+  /* JUnit 4 */
+  testImplementation("junit:junit:4.13.2")
+  testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.8.2")
+}
+
+test {
+  useJUnitPlatform()
+  testLogging {
+    events "PASSED", "SKIPPED", "FAILED", "STANDARD_OUT", "STANDARD_ERROR"
+  }
+}

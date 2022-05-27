@@ -1,0 +1,3 @@
+package modul_07_stream_czyli_funkcyjna_iteracja_po_kolekcjach.sekcja_77_dodatkowy_projekt_do_portfolio;
+
+public class ZadanieGraWPapierKamienNozyce {}

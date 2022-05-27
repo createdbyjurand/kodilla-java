@@ -1,0 +1,2 @@
+rootProject.name = "kodilla-java"
+include "shared", "modul-00-witamy-w-bootcampie-online", "modul-01-programowanie-obiektowe", "modul-02-wstep-do-kolekcji", "modul-03-kolekcje-czesc-druga", "modul-04-narzedzia-java-developera", "modul-05-poznanie-i-przygotowanie-struktury-projektu", "modul-06-wprowadzenie-do-testowania-oprogramowania:kodilla-testing", "modul-07-stream-czyli-funkcyjna-iteracja-po-kolekcjach:kodilla-stream"

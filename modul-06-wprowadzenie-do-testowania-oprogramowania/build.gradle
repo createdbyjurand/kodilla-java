@@ -1,0 +1,17 @@
+plugins {
+  id "idea"
+  id "java"
+}
+
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(8)
+  }
+}
+
+group "com.kodilla"
+version "0.0.1-SNAPSHOT"
+
+repositories {
+  mavenCentral()
+}
