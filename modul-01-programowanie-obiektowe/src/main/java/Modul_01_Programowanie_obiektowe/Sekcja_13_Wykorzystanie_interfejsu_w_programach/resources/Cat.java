@@ -2,11 +2,11 @@ package Modul_01_Programowanie_obiektowe.Sekcja_13_Wykorzystanie_interfejsu_w_pr
 
 public class Cat implements Animal {
 
-  public String voice() {
-    return "miau!";
-  }
+    public String voice() {
+        return "miau!";
+    }
 
-  public String name() {
-    return "Cat";
-  }
+    public String name() {
+        return "Cat";
+    }
 }

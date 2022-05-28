@@ -2,13 +2,13 @@ package Modul_01_Programowanie_obiektowe.Sekcja_15_Wykorzystanie_klasy_abstrakcy
 
 public class FixedSalaryEmployee implements Employee {
 
-  private double salary;
+    private double salary;
 
-  public FixedSalaryEmployee(double salary) {
-    this.salary = salary;
-  }
+    public FixedSalaryEmployee(double salary) {
+        this.salary = salary;
+    }
 
-  public double calculateSalary() {
-    return this.salary;
-  }
+    public double calculateSalary() {
+        return this.salary;
+    }
 }

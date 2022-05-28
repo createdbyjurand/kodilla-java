@@ -1,20 +1,20 @@
 package Modul_01_Programowanie_obiektowe.Sekcja_12_Interfejs.resources;
 
-import static Shared.Display.display;
+import static com.createdbyjurand.shared.display.Display.display;
 
 public class ShapeDrawer {
 
-  private Shape shape;
+    private Shape shape;
 
-  public ShapeDrawer(Shape shape) {
-    display("Object ShapeDrawer created");
+    public ShapeDrawer(Shape shape) {
+        display("Object ShapeDrawer created");
 
-    this.shape = shape;
-  }
+        this.shape = shape;
+    }
 
-  public void process() {
-    System.out.println("Starting to draw the chosen shape...");
-    this.shape.draw();
-    System.out.println("Shape has been drawn.");
-  }
+    public void process() {
+        System.out.println("Starting to draw the chosen shape...");
+        this.shape.draw();
+        System.out.println("Shape has been drawn.");
+    }
 }

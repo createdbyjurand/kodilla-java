@@ -1,4 +1,4 @@
-package com.createdbyjurand.ansi_color;
+package com.createdbyjurand.shared.ansi_color;
 
 public enum AnsiColor {
     RESET("\u001B[0m"),

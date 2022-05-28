@@ -16,4 +16,12 @@
     <version>${revision}</version>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.createdbyjurand</groupId>
+            <artifactId>shared</artifactId>
+            <version>${revision}</version>
+        </dependency>
+    </dependencies>
+
 </project>

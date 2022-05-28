@@ -1,9 +1,9 @@
 package modul_07_stream_czyli_funkcyjna_iteracja_po_kolekcjach.sekcja_71_wstep_do_programowania_funkcyjnego_czyli_wyrazenia_lambda;
 
-import static com.createdbyjurand.shared.Display.displaySubtitle;
-import static com.createdbyjurand.shared.Display.displayTitle;
+import static com.createdbyjurand.shared.display.Display.displaySubtitle;
+import static com.createdbyjurand.shared.display.Display.displayTitle;
 
-import com.createdbyjurand.shared.AnsiColor;
+import com.createdbyjurand.shared.ansi_color.AnsiColor;
 import com.kodilla.stream.lambda.Executor;
 
 public class WstepDoProgramowaniaFunkcyjnegoCzyliWyrazeniaLambda {
@@ -50,6 +50,6 @@ public class WstepDoProgramowaniaFunkcyjnegoCzyliWyrazeniaLambda {
         */
 
         Executor codeToExecute = () -> System.out.println("This is an example text.");
-        codeToExecute
+        //codeToExecute
     }
 }

@@ -1,15 +1,11 @@
 package Modul_02_Wstep_do_kolekcji.Sekcja_25_ArrayList_i_LinkedList;
 
-import static Shared.Display.display;
-import static Shared.Display.displaySubtitle;
-import static Shared.Display.displayTitle;
-import static com.createdbyjurand.shared.Display.display;
-import static com.createdbyjurand.shared.Display.displaySubtitle;
-import static com.createdbyjurand.shared.Display.displayTitle;
+import static com.createdbyjurand.shared.display.Display.display;
+import static com.createdbyjurand.shared.display.Display.displaySubtitle;
+import static com.createdbyjurand.shared.display.Display.displayTitle;
 
 import Modul_02_Wstep_do_kolekcji.Sekcja_25_ArrayList_i_LinkedList.resources.BookImpl;
-import Shared.Display.AnsiColor;
-import com.createdbyjurand.shared.Display.AnsiColor;
+import com.createdbyjurand.shared.ansi_color.AnsiColor;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedList;

@@ -1,6 +1,6 @@
-package com.createdbyjurand.shared;
+package com.createdbyjurand.shared.display;
 
-import com.createdbyjurand.shared.AnsiColor;
+import com.createdbyjurand.shared.ansi_color.AnsiColor;
 import java.util.ArrayList;
 import java.util.List;
 

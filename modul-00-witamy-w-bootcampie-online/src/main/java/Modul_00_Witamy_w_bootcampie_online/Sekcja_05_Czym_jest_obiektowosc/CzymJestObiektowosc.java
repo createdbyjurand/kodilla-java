@@ -1,7 +1,7 @@
 package Modul_00_Witamy_w_bootcampie_online.Sekcja_05_Czym_jest_obiektowosc;
 
-import static Shared.Display.displaySubtitle;
-import static Shared.Display.displayTitle;
+import static com.createdbyjurand.shared.display.Display.displaySubtitle;
+import static com.createdbyjurand.shared.display.Display.displayTitle;
 
 import Modul_00_Witamy_w_bootcampie_online.Sekcja_05_Czym_jest_obiektowosc.resources.Animal;
 import Modul_00_Witamy_w_bootcampie_online.Sekcja_05_Czym_jest_obiektowosc.resources.Baby;
@@ -16,132 +16,131 @@ import Modul_00_Witamy_w_bootcampie_online.Sekcja_05_Czym_jest_obiektowosc.resou
 
 public class CzymJestObiektowosc {
 
-  public static void main(String[] args) throws java.lang.Exception {
+    public static void main(String[] args) throws java.lang.Exception {
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("0.5. Czym jest obiektowość?");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("0.5. Czym jest obiektowość?");
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Klasa");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Klasa");
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Więcej o klasie");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Więcej o klasie");
+        Pilot pilotOne = new Pilot();
 
-    Pilot pilotOne = new Pilot();
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Zadanie - metody");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Zadanie - metody");
+        Vehicle vehicleOne = new Vehicle();
 
-    Vehicle vehicleOne = new Vehicle();
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Budowa klasy i jej składowe");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Budowa klasy i jej składowe");
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Metoda");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Metoda");
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Zadanie - tworzenie własnej klasy użytkownika");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Zadanie - tworzenie własnej klasy użytkownika");
+        User userOne = new User();
+        SimpleCalculator simpleCalculatorOne = new SimpleCalculator();
 
-    User userOne = new User();
-    SimpleCalculator simpleCalculatorOne = new SimpleCalculator();
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Przykład projektu prostej klasy");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Przykład projektu prostej klasy");
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Jak utworzyć obiekt w Javie?");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Jak utworzyć obiekt w Javie?");
+        SimpleCalculator simpleCalculatorTwo = new SimpleCalculator();
 
-    SimpleCalculator simpleCalculatorTwo = new SimpleCalculator();
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Mamy obiekt! Co teraz?");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Mamy obiekt! Co teraz?");
+        simpleCalculatorTwo.addAToB(5, 5);
 
-    simpleCalculatorTwo.addAToB(5, 5);
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Zadanie - odejmowanie liczb zmiennoprzecinkowych");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Zadanie - odejmowanie liczb zmiennoprzecinkowych");
+        Calculator calculator = new Calculator();
+        calculator.subtractDoubleAfromB(8.7, 4.34);
 
-    Calculator calculator = new Calculator();
-    calculator.subtractDoubleAfromB(8.7, 4.34);
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Przykład tworzenia klasy z atrybutami");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Przykład tworzenia klasy z atrybutami");
+        Pilot pilotTwo = new Pilot();
+        Car carOne = new Car();
+        Cat catOne = new Cat();
 
-    Pilot pilotTwo = new Pilot();
-    Car carOne = new Car();
-    Cat catOne = new Cat();
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Tworzenie jawnego konstruktora");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Tworzenie jawnego konstruktora");
+        User andrewOne = new User("Andrew", "male");
 
-    User andrewOne = new User("Andrew", "male");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Gettery - metody zwracające właściwości");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Gettery - metody zwracające właściwości");
+        User andrewTwo = new User("Andrew", "male");
+        System.out.println(andrewTwo.getSex() + " " + andrewTwo.getName());
 
-    User andrewTwo = new User("Andrew", "male");
-    System.out.println(andrewTwo.getSex() + " " + andrewTwo.getName());
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Zadanie - tworzenie obiektu");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Zadanie - tworzenie obiektu");
+        Baby jula = new Baby("Julia", "Baranowska", 29, 4, 2019);
+        System.out.println(jula.getName() + " ma " + jula.getAge() + " lata");
 
-    Baby jula = new Baby("Julia", "Baranowska", 29, 4, 2019);
-    System.out.println(jula.getName() + " ma " + jula.getAge() + " lata");
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Dziedziczenie");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Dziedziczenie");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Czym jest?");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Czym jest?");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Po co nam dziedziczenie?");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Po co nam dziedziczenie?");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Jak to działa?");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Jak to działa?");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Przykład zastosowania dziedziczenia");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Przykład zastosowania dziedziczenia");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Tworzenie klasy po której będziemy dziedziczyć");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Tworzenie klasy po której będziemy dziedziczyć");
+        Vehicle vehicleTwo = new Vehicle("Audi", "2019");
 
-    Vehicle vehicleTwo = new Vehicle("Audi", "2019");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Tworzenie klasy dziedziczącej");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Tworzenie klasy dziedziczącej");
+        Vehicle vehicleThree = new Vehicle("Mazda", "2001");
+        Car carTwo = new Car();
 
-    Vehicle vehicleThree = new Vehicle("Mazda", "2001");
-    Car carTwo = new Car();
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Extends - rozszerzenie klasy");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Extends - rozszerzenie klasy");
+        Car carThree = new Car(1.8, "VW", "2004");
 
-    Car carThree = new Car(1.8, "VW", "2004");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Konstruktor klasy dziedziczącej");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Konstruktor klasy dziedziczącej");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Metoda super()");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Metoda super()");
+        Car carFour = new Car(2.5, "XYZ", "2014");
 
-    Car carFour = new Car(2.5, "XYZ", "2014");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Dziedziczenie metod");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Dziedziczenie metod");
+        Car carFive = new Car(2.5, "JWT", "2001");
+        String model = carFive.getModel();
 
-    Car carFive = new Car(2.5, "JWT", "2001");
-    String model = carFive.getModel();
+        System.out.println(model);
 
-    System.out.println(model);
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Zadanie - dziedziczenie klas");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Zadanie - dziedziczenie klas");
-
-    Animal animalOne = new Animal();
-    Dog dogOne = new Dog();
-    dogOne.eat();
-    dogOne.drink();
-  }
+        Animal animalOne = new Animal();
+        Dog dogOne = new Dog();
+        dogOne.eat();
+        dogOne.drink();
+    }
 }

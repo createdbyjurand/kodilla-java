@@ -1,4 +1,4 @@
-package com.createdbyjurand.char_utils;
+package com.createdbyjurand.shared.char_utils;
 
 public class CharUtils {
 

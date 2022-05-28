@@ -16,14 +16,21 @@
     <version>${revision}</version>
     <packaging>jar</packaging>
 
+    <properties>
+        <start-class>MainClassForMaven</start-class>
+    </properties>
+
     <dependencies>
-        <!--
         <dependency>
-            <groupId>com.kodilla</groupId>
-            <artifactId>shared</artifactId>
+            <groupId>com.createdbyjurand.shared</groupId>
+            <artifactId>display</artifactId>
             <version>${revision}</version>
         </dependency>
-        -->
+        <dependency>
+            <groupId>com.createdbyjurand.shared</groupId>
+            <artifactId>ansi-color</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 
 </project>

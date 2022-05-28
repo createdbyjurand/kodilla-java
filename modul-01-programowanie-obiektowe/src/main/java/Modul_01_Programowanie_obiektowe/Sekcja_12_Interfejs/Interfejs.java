@@ -1,7 +1,7 @@
 package Modul_01_Programowanie_obiektowe.Sekcja_12_Interfejs;
 
-import static Shared.Display.displaySubtitle;
-import static Shared.Display.displayTitle;
+import static com.createdbyjurand.shared.display.Display.displaySubtitle;
+import static com.createdbyjurand.shared.display.Display.displayTitle;
 
 import Modul_01_Programowanie_obiektowe.Sekcja_12_Interfejs.resources.ATM;
 import Modul_01_Programowanie_obiektowe.Sekcja_12_Interfejs.resources.ATMImpl;
@@ -13,49 +13,48 @@ import Modul_01_Programowanie_obiektowe.Sekcja_12_Interfejs.resources.Telephone;
 
 public class Interfejs {
 
-  public static void main(String[] args) throws java.lang.Exception {
+    public static void main(String[] args) throws java.lang.Exception {
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("1.2. Interfejs");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("1.2. Interfejs");
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Czym jest interfejs?");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Czym jest interfejs?");
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Wykorzystanie interfejsu do projektu klasy");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Wykorzystanie interfejsu do projektu klasy");
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Implementacja");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Implementacja");
+        ShapeDrawer drawer = new ShapeDrawer(new Circle());
+        drawer.process();
 
-    ShapeDrawer drawer = new ShapeDrawer(new Circle());
-    drawer.process();
+        Shape circle = new Circle();
+        ShapeDrawer shapeDrawer = new ShapeDrawer(circle);
+        shapeDrawer.process();
 
-    Shape circle = new Circle();
-    ShapeDrawer shapeDrawer = new ShapeDrawer(circle);
-    shapeDrawer.process();
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Interfejsy w Javie 8");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Interfejsy w Javie 8");
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Metody domyślne");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Metody domyślne");
+        Mobile mobile = new Mobile();
+        mobile.callTo("Adam");
+        mobile.callToMom();
 
-    Mobile mobile = new Mobile();
-    mobile.callTo("Adam");
-    mobile.callToMom();
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Metody statyczne");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displaySubtitle("Metody statyczne");
+        System.out.println(Telephone.getMyNumber());
 
-    System.out.println(Telephone.getMyNumber());
+        /////////////////////////////////////////////////////////////////////////////////
+        displayTitle("Zadanie: Bankomat");
 
-    /////////////////////////////////////////////////////////////////////////////////
-    displayTitle("Zadanie: Bankomat");
-
-    ATMImpl atm = new ATMImpl();
-    atm.deposit();
-    atm.payout();
-    atm.connection();
-    ATM.end();
-  }
+        ATMImpl atm = new ATMImpl();
+        atm.deposit();
+        atm.payout();
+        atm.connection();
+        ATM.end();
+    }
 }

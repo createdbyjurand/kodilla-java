@@ -2,15 +2,15 @@ package Modul_01_Programowanie_obiektowe.Sekcja_15_Wykorzystanie_klasy_abstrakcy
 
 public class ProductEmployee implements Employee {
 
-  private int products;
-  private double perProductPay;
+    private int products;
+    private double perProductPay;
 
-  public ProductEmployee(int products, double perProductPay) {
-    this.products = products;
-    this.perProductPay = perProductPay;
-  }
+    public ProductEmployee(int products, double perProductPay) {
+        this.products = products;
+        this.perProductPay = perProductPay;
+    }
 
-  public double calculateSalary() {
-    return this.perProductPay * this.products;
-  }
+    public double calculateSalary() {
+        return this.perProductPay * this.products;
+    }
 }

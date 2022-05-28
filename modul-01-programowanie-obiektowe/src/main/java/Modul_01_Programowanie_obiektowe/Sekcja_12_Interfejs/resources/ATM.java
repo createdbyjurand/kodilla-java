@@ -1,18 +1,17 @@
 package Modul_01_Programowanie_obiektowe.Sekcja_12_Interfejs.resources;
 
-import static Shared.Display.display;
+import static com.createdbyjurand.shared.display.Display.display;
 
 public interface ATM {
+    public void deposit();
 
-  public void deposit();
+    public void payout();
 
-  public void payout();
+    default void connection() {
+        display("Method ATM.connection called");
+    }
 
-  default void connection() {
-    display("Method ATM.connection called");
-  }
-
-  static void end() {
-    display("Method ATM.end called");
-  }
+    static void end() {
+        display("Method ATM.end called");
+    }
 }

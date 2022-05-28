@@ -6,13 +6,16 @@
 >
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.createdbyjurand</groupId>
+    <parent>
+        <groupId>com.kodilla</groupId>
+        <artifactId>kodilla-java</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <groupId>com.createdbyjurand.shared</groupId>
     <artifactId>shared</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
-
-    <name>I am learning Maven Shared</name>
-    <description>An awesome application Shared</description>
 
     <modules>
         <module>ansi-color</module>
@@ -21,26 +24,5 @@
         <module>generate</module>
         <module>string-utils</module>
     </modules>
-
-    <!-- Spring Boot-->
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.0</version>
-        <relativePath /> <!-- lookup parent from repository -->
-    </parent>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <!-- Import dependency management from Spring Boot -->
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>1.5.1.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
 </project>
