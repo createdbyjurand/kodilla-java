@@ -1,9 +1,15 @@
-/.gradle
-/.idea
-/.vscode
-build
-git_ignore
-node_modules
+# User
+git_ignore/
+
+# IDE
+.idea/
+.vscode/
+
+# JavaScript
+node_modules/
+
+# Gradle
+build/
 
 # Maven
 target/

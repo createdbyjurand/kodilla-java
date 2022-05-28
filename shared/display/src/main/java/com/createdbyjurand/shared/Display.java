@@ -1,5 +1,6 @@
 package com.createdbyjurand.shared;
 
+import com.createdbyjurand.shared.AnsiColor;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -128,7 +129,9 @@ public class Display {
 
     public static void displaySubComment(Number numberToDisplay, char listStyleType, AnsiColor... ansiColors) {
         for (String line : wrap("  " + listStyleType + " " + numberToDisplay.toString(), CONSOLE_WIDTH - 3)) {
-            System.out.println("" + AnsiColor.GREEN + "//  " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET);
+            System.out.println(
+                "" + AnsiColor.GREEN + "//  " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
+            );
         }
     }
 
@@ -142,7 +145,9 @@ public class Display {
 
     public static void displaySubSubComment(Number numberToDisplay, char listStyleType, AnsiColor... ansiColors) {
         for (String line : wrap("    " + listStyleType + " " + numberToDisplay.toString(), CONSOLE_WIDTH - 3)) {
-            System.out.println("" + AnsiColor.GREEN + "//  " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET);
+            System.out.println(
+                "" + AnsiColor.GREEN + "//  " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
+            );
         }
     }
 }
