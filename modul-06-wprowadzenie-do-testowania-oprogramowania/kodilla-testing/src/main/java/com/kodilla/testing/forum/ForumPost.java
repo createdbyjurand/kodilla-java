@@ -20,12 +20,18 @@ public class ForumPost {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         ForumPost forumPost = (ForumPost) o;
 
-        if (!postBody.equals(forumPost.postBody)) return false;
+        if (!postBody.equals(forumPost.postBody)) {
+            return false;
+        }
         return author.equals(forumPost.author);
     }
 

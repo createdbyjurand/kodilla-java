@@ -1,8 +1,8 @@
 package modul_06_wprowadzenie_do_testowania_oprogramowania.sekcja_65_mockito_mockujemy_obiekty;
 
-import static com.createdbyjurand.shared.Display.displaySubSubtitle;
-import static com.createdbyjurand.shared.Display.displaySubtitle;
-import static com.createdbyjurand.shared.Display.displayTitle;
+import static com.createdbyjurand.shared.display.Display.displaySubSubtitle;
+import static com.createdbyjurand.shared.display.Display.displaySubtitle;
+import static com.createdbyjurand.shared.display.Display.displayTitle;
 
 public class MockitoMockujemyObiekty {
 

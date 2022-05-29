@@ -1,6 +1,6 @@
 package com.kodilla.testing;
 
-import static com.createdbyjurand.shared.Display.display;
+import static com.createdbyjurand.shared.display.Display.display;
 
 import com.kodilla.testing.calculator.Calculator;
 import com.kodilla.testing.user.SimpleUser;

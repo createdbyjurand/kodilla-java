@@ -1,7 +1,12 @@
 package com.kodilla.testing.forum;
 
 import com.kodilla.testing.user.SimpleUser;
-import org.junit.*;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 public class ForumTestSuite {
 

@@ -20,14 +20,12 @@
         <start-class>MainClassForMaven</start-class>
     </properties>
 
-<!--
     <dependencies>
         <dependency>
-            <groupId>com.kodilla</groupId>
-            <artifactId>shared</artifactId>
+            <groupId>com.createdbyjurand.shared</groupId>
+            <artifactId>display</artifactId>
             <version>${revision}</version>
         </dependency>
     </dependencies>
--->
 
 </project>

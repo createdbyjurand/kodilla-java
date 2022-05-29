@@ -26,13 +26,21 @@ public class ForumComment {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof ForumComment)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof ForumComment)) {
+            return false;
+        }
 
         ForumComment that = (ForumComment) o;
 
-        if (!forumPost.equals(that.forumPost)) return false;
-        if (!commentBody.equals(that.commentBody)) return false;
+        if (!forumPost.equals(that.forumPost)) {
+            return false;
+        }
+        if (!commentBody.equals(that.commentBody)) {
+            return false;
+        }
         return author.equals(that.author);
     }
 

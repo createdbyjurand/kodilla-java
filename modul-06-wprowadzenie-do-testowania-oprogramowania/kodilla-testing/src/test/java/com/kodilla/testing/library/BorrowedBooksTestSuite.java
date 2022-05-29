@@ -12,11 +12,7 @@ public class BorrowedBooksTestSuite {
     private List<Book> generateListOfNBooks(int booksQuantity) {
         List<Book> resultList = new ArrayList<Book>();
         while (booksQuantity > 0) {
-            Book theBook = new Book(
-                "Title " + booksQuantity,
-                "Author " + booksQuantity,
-                1970 + booksQuantity
-            );
+            Book theBook = new Book("Title " + booksQuantity, "Author " + booksQuantity, 1970 + booksQuantity);
             resultList.add(theBook);
             booksQuantity--;
         }

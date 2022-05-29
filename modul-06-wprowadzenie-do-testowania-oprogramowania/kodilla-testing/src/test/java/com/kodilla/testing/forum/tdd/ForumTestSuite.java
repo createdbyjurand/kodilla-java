@@ -13,8 +13,8 @@ import org.junit.Test;
 public class ForumTestSuite {
 
     /**
-     * Aby zmienna testCounter pamiętała swoją wartość pomiędzy uruchomieniem kolejnych przypadków testowych, musi być
-     * zadeklarowana jako właściwość klasy, a nie obiektu, czyli static.
+     * Aby zmienna testCounter pamiętała swoją wartość pomiędzy uruchomieniem kolejnych przypadków testowych, musi
+     * być zadeklarowana jako właściwość klasy, a nie obiektu, czyli static.
      */
     private static int testCounter = 0;
 

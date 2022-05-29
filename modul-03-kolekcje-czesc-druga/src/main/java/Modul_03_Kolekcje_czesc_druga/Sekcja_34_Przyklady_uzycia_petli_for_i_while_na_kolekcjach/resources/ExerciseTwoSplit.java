@@ -7,37 +7,37 @@ import java.util.List;
 
 public class ExerciseTwoSplit {
 
-  private List<String> odd = new ArrayList<String>();
-  private List<String> even = new ArrayList<String>();
+    private List<String> odd = new ArrayList<String>();
+    private List<String> even = new ArrayList<String>();
 
-  public ExerciseTwoSplit(ArrayDeque<String> arrayDeque) {
-    while (arrayDeque.size() > 0) {
-      String string = arrayDeque.poll();
-      if (string.length() % 2 == 0) {
-        this.odd.add(string);
-      } else {
-        this.even.add(string);
-      }
+    public ExerciseTwoSplit(ArrayDeque<String> arrayDeque) {
+        while (arrayDeque.size() > 0) {
+            String string = arrayDeque.poll();
+            if (string.length() % 2 == 0) {
+                this.odd.add(string);
+            } else {
+                this.even.add(string);
+            }
+        }
     }
-  }
 
-  private String listToString(List<String> list){
-    return Arrays.toString(list.toArray());
-  }
+    private String listToString(List<String> list) {
+        return Arrays.toString(list.toArray());
+    }
 
-  public String getOdd() {
-    return listToString(this.odd);
-  }
+    public String getOdd() {
+        return listToString(this.odd);
+    }
 
-  public void setOdd(List<String> list) {
-    this.odd = list;
-  }
+    public void setOdd(List<String> list) {
+        this.odd = list;
+    }
 
-  public String getEven() {
-    return listToString(this.even);
-  }
+    public String getEven() {
+        return listToString(this.even);
+    }
 
-  public void setEven(List<String> list) {
-    this.even = list;
-  }
+    public void setEven(List<String> list) {
+        this.even = list;
+    }
 }

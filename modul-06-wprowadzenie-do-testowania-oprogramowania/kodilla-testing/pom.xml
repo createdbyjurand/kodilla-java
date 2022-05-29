@@ -18,8 +18,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.createdbyjurand</groupId>
-            <artifactId>shared</artifactId>
+            <groupId>com.createdbyjurand.shared</groupId>
+            <artifactId>display</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.createdbyjurand.shared</groupId>
+            <artifactId>generate</artifactId>
             <version>${revision}</version>
         </dependency>
     </dependencies>

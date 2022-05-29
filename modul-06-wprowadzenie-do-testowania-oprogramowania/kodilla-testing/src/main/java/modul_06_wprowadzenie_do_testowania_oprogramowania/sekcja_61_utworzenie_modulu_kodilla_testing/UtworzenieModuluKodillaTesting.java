@@ -1,10 +1,10 @@
 package modul_06_wprowadzenie_do_testowania_oprogramowania.sekcja_61_utworzenie_modulu_kodilla_testing;
 
-import static com.createdbyjurand.shared.Display.displaySubSubtitle;
-import static com.createdbyjurand.shared.Display.displaySubtitle;
-import static com.createdbyjurand.shared.Display.displayTitle;
+import static com.createdbyjurand.shared.display.Display.displaySubSubtitle;
+import static com.createdbyjurand.shared.display.Display.displaySubtitle;
+import static com.createdbyjurand.shared.display.Display.displayTitle;
 
-import com.createdbyjurand.shared.AnsiColor;
+import com.createdbyjurand.shared.ansi_color.AnsiColor;
 
 public class UtworzenieModuluKodillaTesting {
 

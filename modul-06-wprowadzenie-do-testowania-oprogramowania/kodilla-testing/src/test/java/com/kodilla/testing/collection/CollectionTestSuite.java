@@ -1,6 +1,6 @@
 package com.kodilla.testing.collection;
 
-import static com.createdbyjurand.shared.Display.display;
+import static com.createdbyjurand.shared.display.Display.display;
 
 import java.util.ArrayList;
 import java.util.Arrays;

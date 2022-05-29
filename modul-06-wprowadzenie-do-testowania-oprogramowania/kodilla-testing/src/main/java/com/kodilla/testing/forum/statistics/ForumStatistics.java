@@ -1,6 +1,6 @@
 package com.kodilla.testing.forum.statistics;
 
-import static com.createdbyjurand.shared.Display.display;
+import static com.createdbyjurand.shared.display.Display.display;
 
 public class ForumStatistics {
 
@@ -39,13 +39,9 @@ public class ForumStatistics {
         averageNumberOfCommentsPerPost =
             statistics.postsCount() == 0 ? 0 : statistics.commentsCount() / statistics.postsCount();
         averageNumberOfCommentsPerUser =
-            statistics.usersNames().size() == 0
-                ? 0
-                : statistics.commentsCount() / statistics.usersNames().size();
+            statistics.usersNames().size() == 0 ? 0 : statistics.commentsCount() / statistics.usersNames().size();
         averageNumberOfPostsPerUser =
-            statistics.usersNames().size() == 0
-                ? 0
-                : statistics.postsCount() / statistics.usersNames().size();
+            statistics.usersNames().size() == 0 ? 0 : statistics.postsCount() / statistics.usersNames().size();
         numberOfComments = statistics.commentsCount();
         numberOfPosts = statistics.postsCount();
         numberOfUsers = statistics.usersNames().size();

@@ -27,13 +27,7 @@ public class LibraryUser {
     @Override
     public String toString() {
         return (
-            "LibraryUser{firstname='" +
-            firstname +
-            "', lastname='" +
-            lastname +
-            "', peselId='" +
-            peselId +
-            "'}"
+            "LibraryUser{firstname='" + firstname + "', lastname='" + lastname + "', peselId='" + peselId + "'}"
         );
     }
 

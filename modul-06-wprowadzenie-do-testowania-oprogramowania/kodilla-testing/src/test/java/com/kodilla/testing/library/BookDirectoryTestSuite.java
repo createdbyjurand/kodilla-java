@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentMatchers;
 import org.mockito.BDDMockito;
-import org.mockito.Matchers;
 import org.mockito.Mockito;
 
 public class BookDirectoryTestSuite {
@@ -36,11 +36,7 @@ public class BookDirectoryTestSuite {
     private List<Book> generateListOfNBooks(int booksQuantity) {
         List<Book> resultList = new ArrayList<Book>();
         while (booksQuantity > 0) {
-            Book theBook = new Book(
-                "Title " + booksQuantity,
-                "Author " + booksQuantity,
-                1970 + booksQuantity
-            );
+            Book theBook = new Book("Title " + booksQuantity, "Author " + booksQuantity, 1970 + booksQuantity);
             resultList.add(theBook);
             booksQuantity--;
         }
@@ -56,14 +52,10 @@ public class BookDirectoryTestSuite {
         List<Book> resultListOf15Books = generateListOfNBooks(15);
         List<Book> resultListOf40Books = generateListOfNBooks(40);
         BDDMockito
-            .given(libraryDatabaseMock.listBooksWithCondition(Matchers.anyString()))
+            .given(libraryDatabaseMock.listBooksWithCondition(ArgumentMatchers.anyString()))
             .willReturn(resultListOf15Books);
-        BDDMockito
-            .given(libraryDatabaseMock.listBooksWithCondition("ZeroBooks"))
-            .willReturn(resultListOf0Books);
-        BDDMockito
-            .given(libraryDatabaseMock.listBooksWithCondition("FortyBooks"))
-            .willReturn(resultListOf40Books);
+        BDDMockito.given(libraryDatabaseMock.listBooksWithCondition("ZeroBooks")).willReturn(resultListOf0Books);
+        BDDMockito.given(libraryDatabaseMock.listBooksWithCondition("FortyBooks")).willReturn(resultListOf40Books);
 
         // When
         List<Book> theListOfBooks0 = bookLibrary.listBooksWithCondition("ZeroBooks");
@@ -83,7 +75,7 @@ public class BookDirectoryTestSuite {
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultListOf10Books = generateListOfNBooks(10);
         BDDMockito
-            .given(libraryDatabaseMock.listBooksWithCondition(Matchers.anyString()))
+            .given(libraryDatabaseMock.listBooksWithCondition(ArgumentMatchers.anyString()))
             .willReturn(resultListOf10Books);
 
         // When
@@ -91,6 +83,6 @@ public class BookDirectoryTestSuite {
 
         // Then
         Assertions.assertEquals(0, theListOfBooks10.size());
-        Mockito.verify(libraryDatabaseMock, Mockito.times(0)).listBooksWithCondition(Matchers.anyString());
+        Mockito.verify(libraryDatabaseMock, Mockito.times(0)).listBooksWithCondition(ArgumentMatchers.anyString());
     }
 }

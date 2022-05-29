@@ -1,14 +1,14 @@
 package modul_06_wprowadzenie_do_testowania_oprogramowania.sekcja_64_pisanie_testow_za_pomoca_junit;
 
-import static com.createdbyjurand.shared.Display.display;
-import static com.createdbyjurand.shared.Display.displayComment;
-import static com.createdbyjurand.shared.Display.displaySubComment;
-import static com.createdbyjurand.shared.Display.displaySubSubComment;
-import static com.createdbyjurand.shared.Display.displaySubSubtitle;
-import static com.createdbyjurand.shared.Display.displaySubtitle;
-import static com.createdbyjurand.shared.Display.displayTitle;
+import static com.createdbyjurand.shared.display.Display.display;
+import static com.createdbyjurand.shared.display.Display.displayComment;
+import static com.createdbyjurand.shared.display.Display.displaySubComment;
+import static com.createdbyjurand.shared.display.Display.displaySubSubComment;
+import static com.createdbyjurand.shared.display.Display.displaySubSubtitle;
+import static com.createdbyjurand.shared.display.Display.displaySubtitle;
+import static com.createdbyjurand.shared.display.Display.displayTitle;
 
-import com.createdbyjurand.shared.AnsiColor;
+import com.createdbyjurand.shared.ansi_color.AnsiColor;
 import com.kodilla.testing.forum.ForumUser;
 
 public class PisanieTestowZaPomocaJUnit {

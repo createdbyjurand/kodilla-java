@@ -1,11 +1,11 @@
 package modul_06_wprowadzenie_do_testowania_oprogramowania.sekcja_63_junit_czyli_pierwsze_testy;
 
-import static com.createdbyjurand.shared.Display.displayComment;
-import static com.createdbyjurand.shared.Display.displaySubSubtitle;
-import static com.createdbyjurand.shared.Display.displaySubtitle;
-import static com.createdbyjurand.shared.Display.displayTitle;
+import static com.createdbyjurand.shared.display.Display.displayComment;
+import static com.createdbyjurand.shared.display.Display.displaySubSubtitle;
+import static com.createdbyjurand.shared.display.Display.displaySubtitle;
+import static com.createdbyjurand.shared.display.Display.displayTitle;
 
-import com.createdbyjurand.shared.AnsiColor;
+import com.createdbyjurand.shared.ansi_color.AnsiColor;
 
 public class JUnitCzyliPierwszeTesty {
 

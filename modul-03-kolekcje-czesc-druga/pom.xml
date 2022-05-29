@@ -26,6 +26,11 @@
             <artifactId>display</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>com.createdbyjurand.shared</groupId>
+            <artifactId>generate</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 
 </project>

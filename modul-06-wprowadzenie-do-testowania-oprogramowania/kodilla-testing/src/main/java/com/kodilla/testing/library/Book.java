@@ -26,20 +26,26 @@ public class Book {
 
     @Override
     public String toString() {
-        return (
-            "Book{title='" + title + "', author='" + author + "', publicationYear=" + publicationYear + '}'
-        );
+        return ("Book{title='" + title + "', author='" + author + "', publicationYear=" + publicationYear + '}');
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Book)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Book)) {
+            return false;
+        }
 
         Book book = (Book) o;
 
-        if (publicationYear != book.publicationYear) return false;
-        if (!title.equals(book.title)) return false;
+        if (publicationYear != book.publicationYear) {
+            return false;
+        }
+        if (!title.equals(book.title)) {
+            return false;
+        }
         return author.equals(book.author);
     }
 

@@ -1,6 +1,6 @@
 package com.kodilla.testing.forum.statistics;
 
-import com.createdbyjurand.shared.Generate;
+import com.createdbyjurand.shared.generate.Generate;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
