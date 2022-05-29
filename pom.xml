@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 >
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <!-- Project version-->
         <revision>0.0.1-SNAPSHOT</revision>
-
-        <!-- Spring Boot-->
         <java.version>1.8</java.version>
-
-        <!-- Old Maven -->
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-    <!-- Spring Boot-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.0</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>com.kodilla</groupId>
@@ -34,7 +26,6 @@
     <description>kodilla-java (description)</description>
 
     <modules>
-        <module>shared</module>
         <module>modul-00-witamy-w-bootcampie-online</module>
         <module>modul-01-programowanie-obiektowe</module>
         <module>modul-02-wstep-do-kolekcji</module>
@@ -43,9 +34,11 @@
         <module>modul-05-poznanie-i-przygotowanie-struktury-projektu</module>
         <module>modul-06-wprowadzenie-do-testowania-oprogramowania</module>
         <module>modul-07-stream-czyli-funkcyjna-iteracja-po-kolekcjach</module>
+        <module>shared</module>
     </modules>
 
     <dependencies>
+        <!-- TESTING -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -65,13 +58,10 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- SPRING -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -79,6 +69,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- CUSTOM -->
         <dependency>
             <groupId>org.jline</groupId>
             <artifactId>jline</artifactId>
@@ -91,38 +82,8 @@
         </dependency>
     </dependencies>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <!-- Import dependency management from Spring Boot -->
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.7.0</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <build>
         <plugins>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
-                <configuration>
-                    <properties>
-                        <configurationParameters>
-                            junit.jupiter.execution.parallel.enabled = true
-                            junit.jupiter.execution.parallel.mode.default = concurrent
-                            junit.jupiter.execution.parallel.mode.classes.default = concurrent
-                        </configurationParameters>
-                    </properties>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.22.2</version>
-            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

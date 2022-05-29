@@ -1,5 +1,8 @@
 # User
 git_ignore/
+*.iml
+*.ipr
+*.iws
 
 # IDE
 .idea/
