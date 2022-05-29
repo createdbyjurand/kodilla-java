@@ -12,14 +12,14 @@ public class Plane {
     private double keroseneStorage;
 
     public Plane(
-        double maxWeight,
-        double emptyWeight,
-        double loadWeight,
-        double travelSpeed,
-        double flyHours,
-        double consumption,
-        double maxFuel,
-        double keroseneStorage
+            double maxWeight,
+            double emptyWeight,
+            double loadWeight,
+            double travelSpeed,
+            double flyHours,
+            double consumption,
+            double maxFuel,
+            double keroseneStorage
     ) {
         this.maxWeight = maxWeight;
         this.emptyWeight = emptyWeight;
@@ -35,11 +35,14 @@ public class Plane {
         System.out.println("Plane object created");
     }
 
-    public void takeOff() {}
+    public void takeOff() {
+    }
 
-    public void landing() {}
+    public void landing() {
+    }
 
     public double getMaxReach() {
         return (keroseneStorage / consumption) * travelSpeed;
     }
 }
+
