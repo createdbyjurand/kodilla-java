@@ -21,17 +21,17 @@ public class NotacjaBigO {
         displayTitle("Jak się ją wylicza?");
 
         display(
-            "Spotykane w praktyce złożoności obliczeniowe algorytmów, ułożone w kolejności od najlepszej (najszybszy algorytm) do najsłabszej (najwolniejszy algorytm) przedstawiono poniżej:"
+                "Spotykane w praktyce złożoności obliczeniowe algorytmów, ułożone w kolejności od najlepszej (najszybszy algorytm) do najsłabszej (najwolniejszy algorytm) przedstawiono poniżej:"
         );
         display(
-            "O(c) " + AnsiColor.RESET + "- złożoność stała, niezależna od ilości danych wejściowych",
-            AnsiColor.GREEN
+                "O(c) " + AnsiColor.RESET + "- złożoność stała, niezależna od ilości danych wejściowych",
+                AnsiColor.GREEN
         );
         display(
-            "O(log n) " +
-            AnsiColor.RESET +
-            "- złożoność logarytmiczna, spotykana na przykład przy przeszukiwaniu uporządkowanych drzew binarnych",
-            AnsiColor.GREEN
+                "O(log n) " +
+                        AnsiColor.RESET +
+                        "- złożoność logarytmiczna, spotykana na przykład przy przeszukiwaniu uporządkowanych drzew binarnych",
+                AnsiColor.GREEN
         );
         display("O(n) " + AnsiColor.RESET + "- złożoność liniowa", AnsiColor.GREEN);
         display("O(n ^ 2) " + AnsiColor.RESET + "- złożoność kwadratowa", AnsiColor.GREEN);

@@ -15,16 +15,16 @@ public class ForumUser extends User {
     }
 
     public ForumUser(
-        String userName,
-        int numberOfPosts,
-        boolean isLoggedIn,
-        String name,
-        String surname,
-        String sex,
-        String email,
-        int yearOfBirth,
-        int monthOfBirth,
-        int dayOfBirth
+            String userName,
+            int numberOfPosts,
+            boolean isLoggedIn,
+            String name,
+            String surname,
+            String sex,
+            String email,
+            int yearOfBirth,
+            int monthOfBirth,
+            int dayOfBirth
     ) {
         super(name, surname, sex, email, yearOfBirth, monthOfBirth, dayOfBirth);
         display("ForumUser object created", AnsiColor.BLUE);

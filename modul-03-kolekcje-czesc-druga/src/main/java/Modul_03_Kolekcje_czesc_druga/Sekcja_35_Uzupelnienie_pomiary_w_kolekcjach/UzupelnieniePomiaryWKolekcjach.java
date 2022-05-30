@@ -25,10 +25,10 @@ public class UzupelnieniePomiaryWKolekcjach {
 
         displayTitle("Część 1", AnsiColor.BLUE);
         displayComment(
-            "Stwórz klasę reprezentującą książkę o nazwie Book. Klasa powinna mieć dwa pola: author oraz title. Pamiętaj o implementacji metod hashCode() oraz equals(Object o). Będziemy jej używali jako obiektów kolekcji LinkedList w tej części zadania, oraz jako obiektów kolekcji HashMap w drugiej części zadania."
+                "Stwórz klasę reprezentującą książkę o nazwie Book. Klasa powinna mieć dwa pola: author oraz title. Pamiętaj o implementacji metod hashCode() oraz equals(Object o). Będziemy jej używali jako obiektów kolekcji LinkedList w tej części zadania, oraz jako obiektów kolekcji HashMap w drugiej części zadania."
         );
         displayComment(
-            "Stwórz program, który zmierzy czas operacji wyszukiwania i usunięcia obiektu na początku (z użyciem metody remove(Object o)), wyszukiwania i usunięcia obiektu na końcu (z użyciem metody remove(Object o)), wstawiania na początku oraz wstawiania na końcu listy LinkedList liczącej kilka milionów obiektów."
+                "Stwórz program, który zmierzy czas operacji wyszukiwania i usunięcia obiektu na początku (z użyciem metody remove(Object o)), wyszukiwania i usunięcia obiektu na końcu (z użyciem metody remove(Object o)), wstawiania na początku oraz wstawiania na końcu listy LinkedList liczącej kilka milionów obiektów."
         );
 
         List<Book> linkedList = new LinkedList<Book>();
@@ -54,53 +54,53 @@ public class UzupelnieniePomiaryWKolekcjach {
         linkedList.add(0, new Book("Title First", "Author First"));
         end = System.currentTimeMillis();
         display(
-            "Added 1 element at the beginning of an " +
-            (linkedList.size() - 1) +
-            " element LinkedList in " +
-            (end - begin) +
-            "ms",
-            AnsiColor.RED
+                "Added 1 element at the beginning of an " +
+                        (linkedList.size() - 1) +
+                        " element LinkedList in " +
+                        (end - begin) +
+                        "ms",
+                AnsiColor.RED
         );
 
         begin = System.currentTimeMillis();
         linkedList.add(linkedList.size() - 1, new Book("Title Last", "Author Last"));
         end = System.currentTimeMillis();
         display(
-            "Added 1 element at the end of an " +
-            (linkedList.size() - 1) +
-            " element LinkedList in " +
-            (end - begin) +
-            "ms",
-            AnsiColor.RED
+                "Added 1 element at the end of an " +
+                        (linkedList.size() - 1) +
+                        " element LinkedList in " +
+                        (end - begin) +
+                        "ms",
+                AnsiColor.RED
         );
 
         begin = System.currentTimeMillis();
         linkedList.remove(new Book("Title First", "Author First"));
         end = System.currentTimeMillis();
         display(
-            "Removed 1 element from the beginning of an " +
-            (linkedList.size() + 1) +
-            " element LinkedList in " +
-            (end - begin) +
-            "ms",
-            AnsiColor.RED
+                "Removed 1 element from the beginning of an " +
+                        (linkedList.size() + 1) +
+                        " element LinkedList in " +
+                        (end - begin) +
+                        "ms",
+                AnsiColor.RED
         );
 
         begin = System.currentTimeMillis();
         linkedList.remove(new Book("Title Last", "Author Last"));
         end = System.currentTimeMillis();
         display(
-            "Removed 1 element from the end of an " +
-            (linkedList.size() + 1) +
-            " element LinkedList in " +
-            (end - begin) +
-            "ms",
-            AnsiColor.RED
+                "Removed 1 element from the end of an " +
+                        (linkedList.size() + 1) +
+                        " element LinkedList in " +
+                        (end - begin) +
+                        "ms",
+                AnsiColor.RED
         );
 
         displayComment("Część 2", AnsiColor.BLUE);
         displayComment(
-            "Stwórz program, który zmierzy czas operacji wyszukiwania po kluczu, a także czas dodawania i usuwania obiektu z mapy HashMap liczącej kilka milionów obiektów."
+                "Stwórz program, który zmierzy czas operacji wyszukiwania po kluczu, a także czas dodawania i usuwania obiektu z mapy HashMap liczącej kilka milionów obiektów."
         );
 
         HashMap<Integer, Book> hashMap = new HashMap<Integer, Book>();

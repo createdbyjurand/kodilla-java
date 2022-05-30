@@ -22,7 +22,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.createdbyjurand.shared</groupId>
+            <groupId>com.createdbyjurand</groupId>
             <artifactId>display</artifactId>
             <version>${revision}</version>
         </dependency>

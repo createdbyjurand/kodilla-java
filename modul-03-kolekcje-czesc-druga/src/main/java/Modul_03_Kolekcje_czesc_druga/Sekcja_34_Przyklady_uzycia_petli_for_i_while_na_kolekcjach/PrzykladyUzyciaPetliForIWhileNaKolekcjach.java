@@ -99,19 +99,19 @@ public class PrzykladyUzyciaPetliForIWhileNaKolekcjach {
         displayTitle("Zadanie: Litery wężykiem!");
 
         displayComment(
-            "Zadanie składa się z dwóch części. Należy je zrealizować przy pomocy wewnęrznego edytora Kodilla w ramach jednego projektu."
+                "Zadanie składa się z dwóch części. Należy je zrealizować przy pomocy wewnęrznego edytora Kodilla w ramach jednego projektu."
         );
         displayComment("Część 1", AnsiColor.BLUE);
         displayComment(
-            "1.  Napisz program, który w kolejce ArrayDeque umieści 50 obiektów przechowujących napisy, składające się z litery 'a' powtórzonej losową ilość razy (zakres powtórzeń: 1 - 50)."
+                "1.  Napisz program, który w kolejce ArrayDeque umieści 50 obiektów przechowujących napisy, składające się z litery 'a' powtórzonej losową ilość razy (zakres powtórzeń: 1 - 50)."
         );
         displayComment("2.  Wypełnienie obiektu powtórzeniami litery 'a' zrealizuj przy pomocy pętli for.");
         displayComment("Część 2", AnsiColor.BLUE);
         displayComment(
-            "1.  Program z części pierwszej rozbuduj w taki sposób, że przekażesz utworzoną kolejkę do metody Twojej klasy, która dokona rozdzielenia obiektów z kolejki na dwie kolekcje ArrayList."
+                "1.  Program z części pierwszej rozbuduj w taki sposób, że przekażesz utworzoną kolejkę do metody Twojej klasy, która dokona rozdzielenia obiektów z kolejki na dwie kolekcje ArrayList."
         );
         displayComment(
-            "2.  Jedna z nich będzie przechowywała obiekty o parzystej ilości znaków 'a', a druga o nieparzystej."
+                "2.  Jedna z nich będzie przechowywała obiekty o parzystej ilości znaków 'a', a druga o nieparzystej."
         );
 
         /////////////////////////////////////////////////////////////////////////////////

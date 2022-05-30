@@ -33,17 +33,17 @@ public class JUnitCzyliPierwszeTesty {
 
         /////////////////////////////////////////////////////////////////////////////////
         displayComment(
-            "Given (pol. zakładając, że...) oznacza stan zastany, czyli jakąś sytuację \"wejściową\" przed rozpoczęciem wykonywania testu. W naszym poprzednim przykładzie będzie to stan, w którym dysponujemy obiektem klasy SimpleUser z zainicjowaną nazwą użytkownika."
+                "Given (pol. zakładając, że...) oznacza stan zastany, czyli jakąś sytuację \"wejściową\" przed rozpoczęciem wykonywania testu. W naszym poprzednim przykładzie będzie to stan, w którym dysponujemy obiektem klasy SimpleUser z zainicjowaną nazwą użytkownika."
         );
 
         /////////////////////////////////////////////////////////////////////////////////
         displayComment(
-            "When (pol. kiedy...) oznacza operację lub zdarzenie, które chcemy przetestować. W naszym przykładzie będzie to odczytanie nazwy użytkownika przy pomocy gettera getUsername()."
+                "When (pol. kiedy...) oznacza operację lub zdarzenie, które chcemy przetestować. W naszym przykładzie będzie to odczytanie nazwy użytkownika przy pomocy gettera getUsername()."
         );
 
         /////////////////////////////////////////////////////////////////////////////////
         displayComment(
-            "Then (pol. wtedy...) oznacza sekcję warunków, które są sprawdzane, aby móc stwierdzić czy test wykonał się poprawnie, czy też z błędem. W naszym przykładzie będzie to porównanie wartości zwróconej przez getter getUsername() z tekstem, który był użyty w konstruktorze obiektu klasu SimpleUser do zainicjowania nazwy użytkownika."
+                "Then (pol. wtedy...) oznacza sekcję warunków, które są sprawdzane, aby móc stwierdzić czy test wykonał się poprawnie, czy też z błędem. W naszym przykładzie będzie to porównanie wartości zwróconej przez getter getUsername() z tekstem, który był użyty w konstruktorze obiektu klasu SimpleUser do zainicjowania nazwy użytkownika."
         );
 
         /////////////////////////////////////////////////////////////////////////////////
@@ -57,7 +57,7 @@ public class JUnitCzyliPierwszeTesty {
 
         /////////////////////////////////////////////////////////////////////////////////
         displayComment(
-            "Assert (pol. zapewnij) — tutaj wykonujemy asercje, czyli sprawdzamy warunki zapewniające nas, że testowana metoda działa poprawnie."
+                "Assert (pol. zapewnij) — tutaj wykonujemy asercje, czyli sprawdzamy warunki zapewniające nas, że testowana metoda działa poprawnie."
         );
 
         /////////////////////////////////////////////////////////////////////////////////

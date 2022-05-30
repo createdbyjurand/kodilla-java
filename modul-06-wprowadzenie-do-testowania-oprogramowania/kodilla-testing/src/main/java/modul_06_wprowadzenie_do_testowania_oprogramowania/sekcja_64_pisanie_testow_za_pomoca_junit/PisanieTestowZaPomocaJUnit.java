@@ -55,7 +55,7 @@ public class PisanieTestowZaPomocaJUnit {
         displaySubtitle("Stworzenie klas ForumPost oraz ForumComment");
 
         displayComment(
-            "Aby skorzystać z automatycznego generowania kodu przez IntelliJ, ustaw kursor w edytorze kodu w miejscu, w którym chcesz wstawić wygenerowany fragment kodu, a następnie naciśnij na klawiaturze kombinację przycisków Alt+Insert"
+                "Aby skorzystać z automatycznego generowania kodu przez IntelliJ, ustaw kursor w edytorze kodu w miejscu, w którym chcesz wstawić wygenerowany fragment kodu, a następnie naciśnij na klawiaturze kombinację przycisków Alt+Insert"
         );
 
         /////////////////////////////////////////////////////////////////////////////////
@@ -102,32 +102,32 @@ public class PisanieTestowZaPomocaJUnit {
 
         displayComment("Wskazówka praktyczna — statyczny import bibliotek", AnsiColor.BLUE);
         displayComment(
-            "Klasa Assert stanowi część biblioteki JUnit. Dostęp do tej klasy w kodzie możliwy jest dzięki temu, że na początku kodu, w sekcji z importami, obecny jest wpis:"
+                "Klasa Assert stanowi część biblioteki JUnit. Dostęp do tej klasy w kodzie możliwy jest dzięki temu, że na początku kodu, w sekcji z importami, obecny jest wpis:"
         );
         displayComment("import org.junit.*;");
         displayComment(
-            "Można jednak zaimportować bibliotekę JUnit nieco inaczej, przy pomocy tak zwanego importu statycznego:"
+                "Można jednak zaimportować bibliotekę JUnit nieco inaczej, przy pomocy tak zwanego importu statycznego:"
         );
         displayComment("import static org.junit.*;");
         displayComment(
-            "Dzięki temu można odwoływać się do wszystkich statycznych metod klas dostępnych wewnątrz biblioteki JUnit bez podawania nazwy klasy"
+                "Dzięki temu można odwoływać się do wszystkich statycznych metod klas dostępnych wewnątrz biblioteki JUnit bez podawania nazwy klasy"
         );
 
         /////////////////////////////////////////////////////////////////////////////////
         displaySubtitle("Zadanie: kolekcjonujemy figury (i testujemy to!)");
 
         displayComment(
-            "Celem zadania jest przetestowanie klasy, którą musisz napisać, o nazwie — powiedzmy — ShapeCollector, przy następujących założeniach:",
-            AnsiColor.BLUE
+                "Celem zadania jest przetestowanie klasy, którą musisz napisać, o nazwie — powiedzmy — ShapeCollector, przy następujących założeniach:",
+                AnsiColor.BLUE
         );
 
         displaySubComment(
-            "Klasa ta przechowuje figury geometryczne w kolekcji ArrayList. Figury są następujące: kwadrat, koło, trójkąt (oczywiście użyj angielskich nazw klas).",
-            '⚫'
+                "Klasa ta przechowuje figury geometryczne w kolekcji ArrayList. Figury są następujące: kwadrat, koło, trójkąt (oczywiście użyj angielskich nazw klas).",
+                '⚫'
         );
         displaySubComment(
-            "Wszystkie figury implementują interfejs Shape, który musisz przygotować. Zawiera on dwie metody:",
-            '⚫'
+                "Wszystkie figury implementują interfejs Shape, który musisz przygotować. Zawiera on dwie metody:",
+                '⚫'
         );
         displaySubSubComment("jedna zwraca nazwę figury (\"square\", \"triangle\" oraz \"circle\"),", '○');
         displaySubSubComment("a druga zwraca obliczone pole powierzchni tej figury.", '○');
@@ -141,13 +141,13 @@ public class PisanieTestowZaPomocaJUnit {
 
         displayComment("1.  W katalogu src/main/java utwórz pakiet com.kodilla.testing.shape.");
         displayComment(
-            "2.  W stworzonym pakiecie utwórz interfejs Shape, zawierający dwie metody: getShapeName() oraz getField()."
+                "2.  W stworzonym pakiecie utwórz interfejs Shape, zawierający dwie metody: getShapeName() oraz getField()."
         );
         displayComment(
-            "3.  Utwórz klasy reprezentujące poszczególne figury — posiadające już właściwe implementacje metod interfejsu."
+                "3.  Utwórz klasy reprezentujące poszczególne figury — posiadające już właściwe implementacje metod interfejsu."
         );
         displayComment(
-            "4.  Utwórz klasę ShapeCollector z metodami: addFigure(Shape shape), removeFigure(Shape shape), getFigure(int n) oraz showFigures()."
+                "4.  Utwórz klasę ShapeCollector z metodami: addFigure(Shape shape), removeFigure(Shape shape), getFigure(int n) oraz showFigures()."
         );
         displayComment("5.  W katalogu src/test/java utwórz pakiet com.kodilla.testing.shape.");
         displayComment("6.  Stwórz w tym pakiecie klasę testową (zbiór testów) ShapeCollectorTestSuite.");

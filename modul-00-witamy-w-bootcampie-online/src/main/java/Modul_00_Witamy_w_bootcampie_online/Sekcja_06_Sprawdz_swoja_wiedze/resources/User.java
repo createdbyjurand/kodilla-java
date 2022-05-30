@@ -20,13 +20,13 @@ public class User {
     }
 
     public User(
-        String name,
-        String surname,
-        String sex,
-        String email,
-        int yearOfBirth,
-        int monthOfBirth,
-        int dayOfBirth
+            String name,
+            String surname,
+            String sex,
+            String email,
+            int yearOfBirth,
+            int monthOfBirth,
+            int dayOfBirth
     ) {
         display("User object created", AnsiColor.BLUE);
 
