@@ -1,5 +1,8 @@
 package modul_07_stream_czyli_funkcyjna_iteracja_po_kolekcjach.sekcja_71_wstep_do_programowania_funkcyjnego_czyli_wyrazenia_lambda;
 
+import static com.createdbyjurand.shared.display.Display.displayComment;
+import static com.createdbyjurand.shared.display.Display.displaySubComment;
+import static com.createdbyjurand.shared.display.Display.displaySubSubtitle;
 import static com.createdbyjurand.shared.display.Display.displaySubtitle;
 import static com.createdbyjurand.shared.display.Display.displayTitle;
 
@@ -50,6 +53,24 @@ public class WstepDoProgramowaniaFunkcyjnegoCzyliWyrazeniaLambda {
         */
 
         Executor codeToExecute = () -> System.out.println("This is an example text.");
-        //codeToExecute
+
+        codeToExecute.process();
+
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubSubtitle("Wyrażenie lambda a metody z argumentami");
+
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubSubtitle("Przykład kalkulatora wykorzystującego wyrażenia lambda");
+
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Referencje do metod");
+
+        displayComment("Możemy w ten sposób odwoływać się do metod:");
+        displaySubComment("statycznych klasy, poprzez zapis ClassName::methodName", '-');
+        displaySubComment("w istniejących obiektach, poprzez zapis object::methodName", '-');
+        displaySubComment("konstruktora klasy, poprzez zapis ClassName::new", '-');
+
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Zadanie: Upiększacz tekstów");
     }
 }

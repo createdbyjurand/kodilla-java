@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Display {
 
-    private static final int CONSOLE_WIDTH = 120;
+    private static final int CONSOLE_WIDTH = 112;
 
     private static String fill(String input, char character, int repeat) {
         String output = input;
@@ -62,11 +62,15 @@ public class Display {
     /////////////////////////// display ///////////////////////////
 
     public static void display(String stringToDisplay, AnsiColor... ansiColors) {
-        System.out.println("" + AnsiColor.BLUE + mergeAnsiColors(ansiColors) + stringToDisplay + AnsiColor.RESET);
+        System.out.println(
+            "" + AnsiColor.BLUE + mergeAnsiColors(ansiColors) + stringToDisplay + AnsiColor.RESET
+        );
     }
 
     public static void display(Number numberToDisplay, AnsiColor... ansiColors) {
-        System.out.println("" + AnsiColor.BLUE + mergeAnsiColors(ansiColors) + numberToDisplay + AnsiColor.RESET);
+        System.out.println(
+            "" + AnsiColor.BLUE + mergeAnsiColors(ansiColors) + numberToDisplay + AnsiColor.RESET
+        );
     }
 
     /////////////////////////// displayTitle ///////////////////////////
@@ -109,13 +113,17 @@ public class Display {
 
     public static void displayComment(String stringToDisplay, AnsiColor... ansiColors) {
         for (String line : wrap(stringToDisplay, CONSOLE_WIDTH - 3)) {
-            System.out.println("" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET);
+            System.out.println(
+                "" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
+            );
         }
     }
 
     public static void displayComment(Number numberToDisplay, AnsiColor... ansiColors) {
         for (String line : wrap(numberToDisplay.toString(), CONSOLE_WIDTH - 3)) {
-            System.out.println("" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET);
+            System.out.println(
+                "" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
+            );
         }
     }
 
@@ -123,30 +131,75 @@ public class Display {
 
     public static void displaySubComment(String stringToDisplay, char listStyleType, AnsiColor... ansiColors) {
         for (String line : wrap("  " + listStyleType + " " + stringToDisplay, CONSOLE_WIDTH - 3)) {
-            System.out.println("" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET);
+            System.out.println(
+                "" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
+            );
         }
     }
 
     public static void displaySubComment(Number numberToDisplay, char listStyleType, AnsiColor... ansiColors) {
         for (String line : wrap("  " + listStyleType + " " + numberToDisplay.toString(), CONSOLE_WIDTH - 3)) {
             System.out.println(
-                    "" + AnsiColor.GREEN + "//  " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
+                "" + AnsiColor.GREEN + "//  " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
             );
+        }
+    }
+
+    /////////////////////////// displayCommentWithLead ///////////////////////////
+
+    public static void displayCommentWithLead(
+        String leadToDisplay,
+        String stringToDisplay,
+        AnsiColor... ansiColors
+    ) {
+        int leadLengthLeft = leadToDisplay.length();
+        for (String line : wrap("" + leadToDisplay + stringToDisplay, CONSOLE_WIDTH - 3)) {
+            if (leadLengthLeft > CONSOLE_WIDTH - 3) {
+                System.out.println("" + AnsiColor.GREEN + "// " + AnsiColor.BLUE + line + AnsiColor.RESET);
+                leadLengthLeft -= line.length();
+            } else if (leadLengthLeft > 0 && leadLengthLeft < CONSOLE_WIDTH - 3) {
+                System.out.println(
+                    "" +
+                    AnsiColor.GREEN +
+                    "// " +
+                    AnsiColor.BLUE +
+                    line.substring(0, leadLengthLeft) +
+                    AnsiColor.GREEN +
+                    mergeAnsiColors(ansiColors) +
+                    line.substring(leadLengthLeft) +
+                    AnsiColor.RESET
+                );
+                leadLengthLeft -= line.length();
+            } else {
+                System.out.println(
+                    "" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
+                );
+            }
         }
     }
 
     /////////////////////////// displaySubSubComment ///////////////////////////
 
-    public static void displaySubSubComment(String stringToDisplay, char listStyleType, AnsiColor... ansiColors) {
+    public static void displaySubSubComment(
+        String stringToDisplay,
+        char listStyleType,
+        AnsiColor... ansiColors
+    ) {
         for (String line : wrap("    " + listStyleType + " " + stringToDisplay, CONSOLE_WIDTH - 3)) {
-            System.out.println("" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET);
+            System.out.println(
+                "" + AnsiColor.GREEN + "// " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
+            );
         }
     }
 
-    public static void displaySubSubComment(Number numberToDisplay, char listStyleType, AnsiColor... ansiColors) {
+    public static void displaySubSubComment(
+        Number numberToDisplay,
+        char listStyleType,
+        AnsiColor... ansiColors
+    ) {
         for (String line : wrap("    " + listStyleType + " " + numberToDisplay.toString(), CONSOLE_WIDTH - 3)) {
             System.out.println(
-                    "" + AnsiColor.GREEN + "//  " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
+                "" + AnsiColor.GREEN + "//  " + mergeAnsiColors(ansiColors) + line + AnsiColor.RESET
             );
         }
     }

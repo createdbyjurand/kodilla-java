@@ -1,11 +1,13 @@
 # User
 git_ignore/
+
+# IntelliJ IDEA
+.idea/
+*.iws
 *.iml
 *.ipr
-*.iws
 
-# IDE
-.idea/
+# Visual Studio Code
 .vscode/
 
 # JavaScript

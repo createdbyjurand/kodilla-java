@@ -2,11 +2,10 @@
   arrowParens: 'avoid',
   bracketSpacing: false,
   endOfLine: 'crlf',
-  printWidth: 116,
+  printWidth: 112,
   singleAttributePerLine: true,
   singleQuote: true,
   trailingComma: 'all',
-
   overrides: [
     {
       files: '*.java',
