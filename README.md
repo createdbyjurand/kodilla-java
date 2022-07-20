@@ -1,6 +1,6 @@
 # Kodilla Java Bootcamp
 
-`npm i -D prettier@latest prettier-plugin-java@latest @prettier/plugin-xml@latest`
+`npm i -D prettier@latest prettier-plugin-java@latest @prettier/plugin-xml@latest prettier-plugin-properties@latest prettier-plugin-sh@latest`
 
 ## Notes
 

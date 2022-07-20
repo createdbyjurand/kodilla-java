@@ -11,9 +11,6 @@ public class PoznanieFunkcjiStreamFilterMapICollect {
         /////////////////////////////////////////////////////////////////////////////////
         displayTitle("7.3. Poznanie funkcji stream(), filter(), map() i collect()");
 
-        /////////////////////////////////////////////////////////////////////////////////
-        displaySubtitle("Stream w kolekcjach");
-
         displayComment("Przydatne skróty klawiaturowe");
         displayComment(
             "IntelliJ ma wiele przydatnych funkcji. Jedną z nich jest przypisanie często wykonywanych operacji do skrótów klawiaturowych. Poniżej kilka z nich:"
@@ -68,5 +65,11 @@ public class PoznanieFunkcjiStreamFilterMapICollect {
             "Napisz sout i naciśnij Tab",
             " - spowoduje to wstawienie tekstu \"System.out.println()\" - przydatne, gdy często wyświetlasz coś na ekranie konsoli."
         );
+
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Stream w kolekcjach");
+
+        /////////////////////////////////////////////////////////////////////////////////
+        displaySubtitle("Operacje transformujące na Stream");
     }
 }
