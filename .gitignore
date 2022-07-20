@@ -1,11 +1,23 @@
-/.gradle
-/.idea
-/.vscode
-/build
-/createdbyjurand/build
-/git_ignore
-/kodilla-testing/build
-/node_modules
-/out
-/shared/build
-/src/main/react/node_modules
+# User
+git_ignore/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Visual Studio Code
+.vscode/
+
+# JavaScript
+node_modules/
+
+# Gradle
+build/
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
